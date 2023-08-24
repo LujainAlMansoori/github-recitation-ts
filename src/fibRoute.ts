@@ -11,6 +11,6 @@ export default (req: Request, res) => {
   if (fibN < 0) {
     result = `fibonacci(${num}) is undefined`
   }
-
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
   res.send(result);
 }
